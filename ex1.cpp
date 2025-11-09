@@ -43,7 +43,7 @@ class Livre:public Ressource, public Telechargeable{
         void afficheInfos(){
             cout << id << " : " << titre << ", " << auteur << ", " << annee << ", " << nbrDesPages << endl;
         }
-        void telecharger() const override{
+        void telecharger() const{
             cout << "Livre encours de telechargement...." << endl;
         }
 };
@@ -55,7 +55,7 @@ class Magazine:public Ressource, public Telechargeable {
         void afficheInfo(){
             cout << id << " : " << titre << ", " << auteur << ", " << annee << ", " << version << endl;
         }
-        void telecharger() const override{
+        void telecharger() const{
             cout << "Magazine encours de telechargement...." << endl;
         }
         
@@ -68,7 +68,7 @@ class Video:public Ressource, public Telechargeable {
         void afficheInfo(){
             cout << id << " : " << titre << ", " << auteur << ", " << annee << ", " << duree << endl;
         }
-        void telecharger() const override{
+        void telecharger() const{
             cout << "Video encours de telechargement...." << endl;
         }
 };
